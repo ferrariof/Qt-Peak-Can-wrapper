@@ -1,0 +1,16 @@
+#ifndef CANDLL_GLOBAL_H
+#define CANDLL_GLOBAL_H
+
+#include <qglobal.h>
+
+#if defined(CANDLL_LIBRARY)
+#  define CANDLL_EXPORT Q_DECL_EXPORT
+#else
+#  define CANDLL_EXPORT Q_DECL_IMPORT
+#endif
+
+#define CANDLL_VERSION_MAJOR 1
+#define CANDLL_VERSION_MINOR 0
+#define CANDLL_VERSION_PATCH 0
+
+#endif // CANDLL_GLOBAL_H
